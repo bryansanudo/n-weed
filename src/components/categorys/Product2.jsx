@@ -97,7 +97,7 @@ const Product2 = ({
               >
                 <img
                   src={product.src}
-                  className="mt-2 h-[450px] w-[400px] object-cover rounded-t-xl "
+                  className=" h-[450px] w-[400px] object-cover rounded-t-xl "
                 />
                 <p className="mt-3 capitalize text-sm md:text-lg">
                   {product.nameProduct}
