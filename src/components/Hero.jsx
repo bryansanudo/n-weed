@@ -16,8 +16,12 @@ import photo5 from "@/assets/hero/5.jpg";
 import photo6 from "@/assets/hero/6.jpg";
 import photo7 from "@/assets/hero/7.jpg";
 import photo8 from "@/assets/hero/8.jpg";
+import photo9 from "@/assets/hero/9.jpg";
+import photo10 from "@/assets/hero/10.jpg";
 
 const ARRAY_IMG = [
+  photo9,
+  photo10,
   photo6,
   photo1,
   photo2,
@@ -54,7 +58,7 @@ const Hero = () => {
       className="min-h-screen flex flex-col justify-start items-center text-cente pt-[150px] "
     >
       <TypingText
-        title="NEED WEED"
+        title="Siempre parchados con Need Weed"
         textStyles="font-bold text-4xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#ffcdc2] to-[#6057ca] hover:from-[#6057ca] hover:to-[#ffcdc2] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl"
       />
 

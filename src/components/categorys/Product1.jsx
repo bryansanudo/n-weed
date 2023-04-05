@@ -18,35 +18,47 @@ const Product1 = ({
 }) => {
   const portfolios = [
     {
-      id: 1,
-      src: "https://i.ibb.co/bdv4HbZ/product1.jpg",
-      nameProduct: "Batería Airis",
-      price: "COP 200.000",
+      id: 8,
+      src: "https://i.ibb.co/mCPwdWn/100.jpg",
+      nameProduct: "BrassKnuckles Dorado-Plateado-Madera",
+      price: "COP 100.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: "Incluye: Destilado Importado",
-      delay: 1,
+      quantity: "Incluye: Destilado Nacional",
+      delay: 7,
     },
     {
-      id: 2,
-      src: "https://i.ibb.co/7y3XmPX/product2.jpg",
-      nameProduct: "Batería BrassKnuckless",
+      id: 9,
+      src: "https://i.ibb.co/0GFgwzB/110.jpg",
+      nameProduct: "BrassKnuckles Tornasol-Rojo-Negro",
       price: "COP 110.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
       quantity: "Incluye: Destilado Nacional",
-      delay: 2,
+      delay: 7,
+    },
+
+    {
+      id: 2,
+      src: "https://i.ibb.co/vzs1Nv3/cargador.jpg",
+      nameProduct: "Cargador",
+      price: "COP 20.000",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: "Incluye: -",
+      delay: 1,
     },
     {
-      id: 3,
-      src: "https://i.ibb.co/DKC8k21/product3.jpg",
-      nameProduct: "Batería de color ",
-      price: "COP 150.000",
+      id: 1,
+      src: "https://i.ibb.co/nL8fjC1/IMG-9967.jpg",
+      nameProduct: "Batería Airis",
+      price: "COP 200.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
       quantity: "Incluye: Destilado Nacional",
-      delay: 3,
+      delay: 1,
     },
+
     {
       id: 4,
       src: "https://i.ibb.co/tBtrxrr/product4.jpg",
@@ -68,8 +80,18 @@ const Product1 = ({
       delay: 5,
     },
     {
+      id: 3,
+      src: "https://i.ibb.co/k5kNMC5/b4a66055-f726-4d47-9977-4a525d019b0a.jpg",
+      nameProduct: "Batería de color ",
+      price: "COP 150.000",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: "Incluye: Destilado Nacional",
+      delay: 3,
+    },
+    {
       id: 6,
-      src: "https://i.ibb.co/LCbL33b/product6.jpg",
+      src: "https://i.ibb.co/K2CNCnp/pipa.jpg",
       nameProduct: "Batería Pipa",
       price: "COP 190.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -121,7 +143,7 @@ const Product1 = ({
             >
               <img
                 src={product.src}
-                className=" h-[400px] w-[400px] object-cover rounded-t-xl "
+                className=" h-[400px] w-[400px] object-cover object-top rounded-t-xl "
               />
               <p className="mt-3 capitalize text-sm md:text-lg">
                 {product.nameProduct}

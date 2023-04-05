@@ -18,6 +18,26 @@ const Product2 = ({
 }) => {
   const portfolios = [
     {
+      id: 8,
+      src: "https://i.ibb.co/ftBFK0k/nacional.jpg",
+      nameProduct: "Destilados Nacionales",
+      price: "COP 50.000",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 4,
+    },
+    {
+      id: 7,
+      src: "https://i.ibb.co/qRgRnqw/3.jpg",
+      nameProduct: "Destilados Importados",
+      price: "COP 70.000",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 3,
+    },
+    {
       id: 5,
       src: "https://i.ibb.co/rtPPXtY/1.jpg",
       nameProduct: "Destilado Importado CUREpen",
@@ -29,7 +49,7 @@ const Product2 = ({
     },
     {
       id: 6,
-      src: "https://i.ibb.co/txZWbMs/2.jpg",
+      src: "https://i.ibb.co/pw1SKCb/juice.jpg",
       nameProduct: "Destilado Importado Sweeter Juice",
       price: "COP 70.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -38,24 +58,24 @@ const Product2 = ({
       delay: 2,
     },
     {
-      id: 7,
-      src: "https://i.ibb.co/qRgRnqw/3.jpg",
-      nameProduct: "Destilado Importado",
+      id: 4,
+      src: "https://i.ibb.co/9v1ps6S/push.jpg",
+      nameProduct: "Destilado Importado Push",
       price: "COP 70.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
-      delay: 3,
+      delay: 2,
     },
     {
-      id: 8,
-      src: "https://i.ibb.co/P1D60FM/4.jpg",
-      nameProduct: "Destilado Nacional",
+      id: 12,
+      src: "https://i.ibb.co/BBhKtpc/Whats-App-Image-2023-04-05-at-3-16-20-PM-1.jpg",
+      nameProduct: "Destilado Dabwoods ",
       price: "COP 50.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
-      delay: 4,
+      delay: 2,
     },
   ];
 
@@ -97,7 +117,7 @@ const Product2 = ({
               >
                 <img
                   src={product.src}
-                  className=" h-[450px] w-[400px] object-cover rounded-t-xl "
+                  className=" h-[450px] w-[400px] object-top object-cover rounded-t-xl "
                 />
                 <p className="mt-3 capitalize text-sm md:text-lg">
                   {product.nameProduct}
