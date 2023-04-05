@@ -5,7 +5,7 @@ import product1 from "@/assets/categorys/product1/product1.jpg";
 import product2 from "@/assets/categorys/product1/product2.jpg";
 import product3 from "@/assets/categorys/product1/product3.jpg";
 import product4 from "@/assets/categorys/product1/product4.jpg";
-import product5 from "@/assets/categorys/product1/product5.jpg";
+import product5 from "@/assets/categorys/product1/product50.jpg";
 import product6 from "@/assets/categorys/product1/product6.jpg";
 import product7 from "@/assets/categorys/product1/product7.jpg";
 
