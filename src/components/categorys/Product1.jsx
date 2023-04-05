@@ -45,7 +45,7 @@ const Product1 = ({
       price: "COP 20.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: "Incluye: -",
+      quantity: "Cargador USB",
       delay: 1,
     },
     {
@@ -145,12 +145,8 @@ const Product1 = ({
                 src={product.src}
                 className=" h-[400px] w-[400px] object-cover object-top rounded-t-xl "
               />
-              <p className="mt-3 capitalize text-sm md:text-lg">
-                {product.nameProduct}
-              </p>
-              <p className="mt-3 capitalize text-sm md:text-lg">
-                {product.quantity}
-              </p>
+              <p className="mt-3 capitalize text-sm ">{product.nameProduct}</p>
+              <p className="mt-3 capitalize text-sm ">{product.quantity}</p>
               <div className="flex gap-5">{product.price}</div>
 
               <article className="hover:scale-125 duration-300 mb-2">
