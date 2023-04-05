@@ -5,8 +5,7 @@ import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { TypingText, TitleText } from "@/components/CustomTexts";
 import { staggerContainer, zoomIn } from "@/utils/motion";
-import heroVideo from "@/assets/heroVideo.mp4";
-import Contact from "@/components/Contact";
+
 import { useState } from "react";
 
 import photo1 from "@/assets/hero/1.jpg";
