@@ -26,7 +26,7 @@ const Footer = () => {
 
           <TypingText
             title="Eliana Caro Suaza"
-            textStyles="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#6057ca] to-[#CA6057] hover:from-[#CA6057] hover:to-[#6057ca] transition duration-500 ease-in-out transform   md:text-5xl"
+            textStyles="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#ffcdc2] to-[#6057ca] hover:from-[#6057ca] hover:to-[#ffcdc2] transition duration-500 ease-in-out transform   md:text-5xl"
           />
           <button type="button" onClick={useScroll}>
             <AiOutlineArrowUp

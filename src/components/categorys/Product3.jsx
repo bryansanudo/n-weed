@@ -26,50 +26,50 @@ const Product3 = ({
     {
       id: 9,
       src: product1,
-      nameProduct: "Producto 1",
-      price: 5000,
+      nameProduct: "Jeeter Juice PAPAYA",
+      price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 1,
     },
     {
       id: 10,
       src: product2,
-      nameProduct: "Producto 2",
-      price: 5000,
+      nameProduct: "Jeeter Juice WEEDING CAKE",
+      price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 2,
     },
     {
       id: 11,
       src: product3,
-      nameProduct: "Producto 3",
-      price: 5000,
+      nameProduct: "Jeeter Juice KUSH MINTZ",
+      price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 3,
     },
     {
       id: 12,
       src: product4,
-      nameProduct: "Producto 4",
-      price: 5000,
+      nameProduct: "Jeeter Juice SFV OG",
+      price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 4,
     },
     {
       id: 13,
       src: product5,
-      nameProduct: "Producto 5",
-      price: 5000,
+      nameProduct: "Dabwoods",
+      price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 5,
     },
@@ -97,7 +97,7 @@ const Product3 = ({
     >
       <Section
         name="portafolio"
-        title="¡Otros! "
+        title="¡Live Resin! "
         subtitle={`
     Nos complace presentarte nuestra amplia gama de productos de alta calidad. Ofrecemos una variedad para que puedas encontrar el que más te guste.
 `}
@@ -108,23 +108,22 @@ const Product3 = ({
             {portfolios.map((product) => (
               <div
                 key={product.id}
-                className="flex flex-col items-center justify-center"
+                className="flex flex-col items-center justify-center rounded-xl shadow-lg shadow-[#ffcdc2]"
               >
                 <img
                   src={product.src}
-                  className="mt-2 h-[450px] w-[400px] shadow-lg shadow-[#ffcdc2]  object-cover rounded-xl "
+                  className="mt-2 h-[450px] w-[400px] object-cover rounded-t-xl "
                 />
                 <p className="mt-3 capitalize text-sm md:text-lg">
                   {product.nameProduct}
                 </p>
                 <div className="flex gap-5">{product.price}</div>
-                <div className=" capitalize text-sm md:text-lg flex flex-col items-center justify-center gap-2">
-                  <article className="hover:scale-125 duration-300">
-                    <a href={product.codeWpp} target="_blank" rel="noreferrer">
-                      <IconWpp />
-                    </a>
-                  </article>
-                </div>
+
+                <article className="hover:scale-125 duration-300 mb-2">
+                  <a href={product.codeWpp} target="_blank" rel="noreferrer">
+                    <IconWpp />
+                  </a>
+                </article>
               </div>
             ))}
           </div>

@@ -19,12 +19,12 @@ import photo7 from "@/assets/hero/7.jpg";
 import photo8 from "@/assets/hero/8.jpg";
 
 const ARRAY_IMG = [
+  photo6,
   photo1,
   photo2,
   photo3,
   photo4,
   photo5,
-  photo6,
   photo7,
   photo8,
 ];
@@ -63,13 +63,13 @@ const Hero = () => {
         <img
           src={ARRAY_IMG[index]}
           alt=""
-          className="rounded-lg shadow-xl shadow-thPrimary  object-cover w-[600px] h-[550px] lg:h-[600px]"
+          className="rounded-lg shadow-[#ffcdc2] shadow-xl   object-cover w-[600px] h-[550px] lg:h-[600px]"
         />
         <div
           className={`absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-between px-4 `}
         >
           <button
-            className="grid h-10 w-10 place-items-center  rounded-full bg-white"
+            className="grid h-10 w-10  place-items-center  rounded-full bg-white"
             onClick={handleClickPrev}
           >
             <GrLinkPrevious size={40} />

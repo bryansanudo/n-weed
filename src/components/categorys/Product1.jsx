@@ -28,70 +28,70 @@ const Product1 = ({
     {
       id: 1,
       src: product1,
-      nameProduct: "Producto 1",
-      price: 5000,
+      nameProduct: "Batería Airis + Destilado Importado",
+      price: "COP 200.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 1,
     },
     {
       id: 2,
       src: product2,
-      nameProduct: "Producto 2",
-      price: 5000,
+      nameProduct: "Batería BrassKnuckles + Destilado",
+      price: "COP 110.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 2,
     },
     {
       id: 3,
       src: product3,
-      nameProduct: "Producto 3",
-      price: 5000,
+      nameProduct: "Batería de color + Destilado + Cargador",
+      price: "COP 150.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 3,
     },
     {
       id: 4,
       src: product4,
-      nameProduct: "Producto 4",
-      price: 5000,
+      nameProduct: "Batería lux",
+      price: "COP 100.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 4,
     },
     {
       id: 5,
       src: product5,
-      nameProduct: "Producto 5",
-      price: 5000,
+      nameProduct: "Batería Gold Ingot + Destilado Importado",
+      price: "COP 300.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 5,
     },
     {
       id: 6,
       src: product6,
-      nameProduct: "Producto 6",
-      price: 5000,
+      nameProduct: "Batería Pipa + Destilado Nacional + Cargador",
+      price: "COP 190.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 6,
     },
     {
       id: 7,
       src: product7,
-      nameProduct: "Producto 7",
-      price: 5000,
+      nameProduct: "Batería Negra + Destilado + Cargador",
+      price: "COP 170.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
-      codeWpp: "https://api.whatsapp.com/send?phone=579999999999",
+      codeWpp: "https://wa.me/c/573127965835",
       quantity: 1,
       delay: 7,
     },
@@ -125,23 +125,22 @@ const Product1 = ({
           {portfolios.map((product) => (
             <div
               key={product.id}
-              className="flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center rounded-xl shadow-lg shadow-[#ffcdc2]"
             >
               <img
                 src={product.src}
-                className="mt-2 h-[450px] w-[400px] shadow-lg shadow-[#ffcdc2]  object-cover rounded-xl "
+                className="mt-2 h-[450px] w-[400px] object-cover rounded-t-xl "
               />
               <p className="mt-3 capitalize text-sm md:text-lg">
                 {product.nameProduct}
               </p>
               <div className="flex gap-5">{product.price}</div>
-              <div className=" capitalize text-sm md:text-lg flex flex-col items-center justify-center gap-2">
-                <article className="hover:scale-125 duration-300">
-                  <a href={product.codeWpp} target="_blank" rel="noreferrer">
-                    <IconWpp />
-                  </a>
-                </article>
-              </div>
+
+              <article className="hover:scale-125 duration-300 mb-2">
+                <a href={product.codeWpp} target="_blank" rel="noreferrer">
+                  <IconWpp />
+                </a>
+              </article>
             </div>
           ))}
         </div>

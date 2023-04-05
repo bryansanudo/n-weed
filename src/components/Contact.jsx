@@ -32,9 +32,9 @@ const Contact = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <div className="w-[350px] flex flex-col items-center justify-center gap-8 text-center  bg-gradient-to-r from-[#6057ca] to-[#CA6057] text-white py-3 rounded-lg mb-10 shadow-xl shadow-gray-600">
+      <div className="w-[350px] flex flex-col items-center justify-center gap-8 text-center  bg-gradient-to-r from-[#ffcdc2] to-[#6057ca] text-white py-3 rounded-lg mb-10 shadow-xl shadow-gray-600">
         <motion.div
-          variants={fadeIn("right", "tween", 2, 1.5)}
+          variants={fadeIn("right", "tween", 1, 1.5)}
           className="flex w-full items-center justify-evenly text-3xl"
         >
           {SOCIAL.map(({ id, link, icon }) => (
