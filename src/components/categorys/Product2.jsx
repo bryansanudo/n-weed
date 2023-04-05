@@ -1,11 +1,6 @@
 import React from "react";
 import Section from "@/components/common/Section";
 
-import product1 from "@/assets/categorys/product2/1.jpg";
-import product2 from "@/assets/categorys/product2/2.jpg";
-import product3 from "@/assets/categorys/product2/3.jpg";
-import product4 from "@/assets/categorys/product2/4.jpg";
-
 import Navigate from "@/components/categorys/Navigate";
 import IconInstagram from "@/icons/IconInstagram";
 import IconWpp from "@/icons/IconWpp";
@@ -24,7 +19,7 @@ const Product2 = ({
   const portfolios = [
     {
       id: 5,
-      src: product1,
+      src: "https://i.ibb.co/rtPPXtY/1.jpg",
       nameProduct: "Destilado Importado CUREpen",
       price: "COP 70.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -34,7 +29,7 @@ const Product2 = ({
     },
     {
       id: 6,
-      src: product2,
+      src: "https://i.ibb.co/txZWbMs/2.jpg",
       nameProduct: "Destilado Importado Sweeter Juice",
       price: "COP 70.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -44,7 +39,7 @@ const Product2 = ({
     },
     {
       id: 7,
-      src: product3,
+      src: "https://i.ibb.co/qRgRnqw/3.jpg",
       nameProduct: "Destilado Importado",
       price: "COP 70.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -54,7 +49,7 @@ const Product2 = ({
     },
     {
       id: 8,
-      src: product4,
+      src: "https://i.ibb.co/P1D60FM/4.jpg",
       nameProduct: "Destilado Nacional",
       price: "COP 50.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",

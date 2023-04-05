@@ -1,12 +1,6 @@
 import React from "react";
 import Section from "@/components/common/Section";
 
-import product1 from "@/assets/categorys/product3/1.jpg";
-import product2 from "@/assets/categorys/product3/2.jpg";
-import product3 from "@/assets/categorys/product3/3.jpg";
-import product4 from "@/assets/categorys/product3/4.jpg";
-import product5 from "@/assets/categorys/product3/5.jpg";
-
 import Navigate from "@/components/categorys/Navigate";
 import IconInstagram from "@/icons/IconInstagram";
 import IconWpp from "@/icons/IconWpp";
@@ -25,7 +19,7 @@ const Product3 = ({
   const portfolios = [
     {
       id: 9,
-      src: product1,
+      src: "https://i.ibb.co/YjyTLPt/1.jpg",
       nameProduct: "Jeeter Juice PAPAYA",
       price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -35,7 +29,7 @@ const Product3 = ({
     },
     {
       id: 10,
-      src: product2,
+      src: "https://i.ibb.co/Jq3hmrj/2.jpg",
       nameProduct: "Jeeter Juice WEEDING CAKE",
       price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -45,7 +39,7 @@ const Product3 = ({
     },
     {
       id: 11,
-      src: product3,
+      src: "https://i.ibb.co/ZHHxtbd/3.jpg",
       nameProduct: "Jeeter Juice KUSH MINTZ",
       price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -55,7 +49,7 @@ const Product3 = ({
     },
     {
       id: 12,
-      src: product4,
+      src: "https://i.ibb.co/x89Zgcg/4.jpg",
       nameProduct: "Jeeter Juice SFV OG",
       price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
@@ -65,7 +59,7 @@ const Product3 = ({
     },
     {
       id: 13,
-      src: product5,
+      src: "https://i.ibb.co/wYkZJC0/5.jpg",
       nameProduct: "Dabwoods",
       price: "COP $$$",
       codeInstagram: "https://www.instagram.com/elianacaro12/",

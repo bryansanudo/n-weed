@@ -1,14 +1,6 @@
 import React from "react";
 import Section from "@/components/common/Section";
 
-import product1 from "@/assets/categorys/product1/product1.jpg";
-import product2 from "@/assets/categorys/product1/product2.jpg";
-import product3 from "@/assets/categorys/product1/product3.jpg";
-import product4 from "@/assets/categorys/product1/product4.jpg";
-import product5 from "@/assets/categorys/product1/product50.jpg";
-import product6 from "@/assets/categorys/product1/product6.jpg";
-import product7 from "@/assets/categorys/product1/product7.jpg";
-
 import Navigate from "@/components/categorys/Navigate";
 import IconInstagram from "@/icons/IconInstagram";
 import IconWpp from "@/icons/IconWpp";
@@ -27,72 +19,72 @@ const Product1 = ({
   const portfolios = [
     {
       id: 1,
-      src: product1,
-      nameProduct: "Batería Airis + Destilado Importado",
+      src: "https://i.ibb.co/bdv4HbZ/product1.jpg",
+      nameProduct: "Batería Airis",
       price: "COP 200.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: 1,
+      quantity: "Incluye: Destilado Importado",
       delay: 1,
     },
     {
       id: 2,
-      src: product2,
-      nameProduct: "Batería BrassKnuckles + Destilado",
+      src: "https://i.ibb.co/7y3XmPX/product2.jpg",
+      nameProduct: "Batería BrassKnuckless",
       price: "COP 110.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: 1,
+      quantity: "Incluye: Destilado Nacional",
       delay: 2,
     },
     {
       id: 3,
-      src: product3,
-      nameProduct: "Batería de color + Destilado + Cargador",
+      src: "https://i.ibb.co/DKC8k21/product3.jpg",
+      nameProduct: "Batería de color ",
       price: "COP 150.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: 1,
+      quantity: "Incluye: Destilado Nacional",
       delay: 3,
     },
     {
       id: 4,
-      src: product4,
+      src: "https://i.ibb.co/tBtrxrr/product4.jpg",
       nameProduct: "Batería lux",
       price: "COP 100.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: 1,
+      quantity: "Incluye: Solo Batería",
       delay: 4,
     },
     {
       id: 5,
-      src: product5,
-      nameProduct: "Batería Gold Ingot + Destilado Importado",
+      src: "https://i.ibb.co/JkzdHBC/product50.jpg",
+      nameProduct: "Batería Gold Ingot",
       price: "COP 300.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: 1,
+      quantity: "Incluye: Destilado Importado",
       delay: 5,
     },
     {
       id: 6,
-      src: product6,
-      nameProduct: "Batería Pipa + Destilado Nacional + Cargador",
+      src: "https://i.ibb.co/LCbL33b/product6.jpg",
+      nameProduct: "Batería Pipa",
       price: "COP 190.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: 1,
+      quantity: "Incluye: Destilado Nacional",
       delay: 6,
     },
     {
       id: 7,
-      src: product7,
-      nameProduct: "Batería Negra + Destilado + Cargador",
+      src: "https://i.ibb.co/WFMc7Wz/product7.jpg",
+      nameProduct: "Batería Negra",
       price: "COP 170.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
       codeWpp: "https://wa.me/c/573127965835",
-      quantity: 1,
+      quantity: "Incluye: Destilado Nacional",
       delay: 7,
     },
   ];
@@ -129,10 +121,13 @@ const Product1 = ({
             >
               <img
                 src={product.src}
-                className="mt-2 h-[450px] w-[400px] object-cover rounded-t-xl "
+                className=" h-[400px] w-[400px] object-cover rounded-t-xl "
               />
               <p className="mt-3 capitalize text-sm md:text-lg">
                 {product.nameProduct}
+              </p>
+              <p className="mt-3 capitalize text-sm md:text-lg">
+                {product.quantity}
               </p>
               <div className="flex gap-5">{product.price}</div>
 
