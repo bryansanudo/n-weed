@@ -101,7 +101,7 @@ const Product1 = ({
     },
     {
       id: 7,
-      src: "https://i.ibb.co/WFMc7Wz/product7.jpg",
+      src: "https://i.ibb.co/RPZzLjr/product7.jpg",
       nameProduct: "Batería Negra",
       price: "COP 170.000",
       codeInstagram: "https://www.instagram.com/elianacaro12/",
