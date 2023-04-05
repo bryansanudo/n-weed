@@ -63,7 +63,7 @@ const Hero = () => {
         <img
           src={ARRAY_IMG[index]}
           alt=""
-          className="rounded-lg shadow-[#ffcdc2] shadow-xl   object-cover w-[600px] h-[550px] lg:h-[600px]"
+          className="rounded-lg shadow-[#ffcdc2] shadow-xl   object-cover w-[600px] h-[500px] lg:h-[600px]"
         />
         <div
           className={`absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-between px-4 `}
