@@ -1,12 +1,14 @@
 import React from "react";
 import Section from "@/components/common/Section";
 
+import { CgSmartHomeLight } from "react-icons/cg";
 import Navigate from "@/components/categorys/Navigate";
 import IconInstagram from "@/icons/IconInstagram";
 import IconWpp from "@/icons/IconWpp";
 import { motion } from "framer-motion";
+import { fadeIn, zoomIn } from "@/utils/motion";
 
-import { staggerContainer, fadeIn } from "@/utils/motion";
+import { staggerContainer } from "@/utils/motion";
 
 const Product1 = ({
   allProducts,
@@ -125,14 +127,33 @@ const Product1 = ({
     setAllProducts([...allProducts, product]);
   };
   return (
-    <Section
-      name="portafolio"
-      title="¡Baterias! "
-      subtitle={`
-      Nos complace presentarte nuestra amplia gama de productos de alta calidad. Ofrecemos una variedad para que puedas encontrar el que más te guste.
+    <section className="min-h-fit flex flex-col justify-start items-center py-16 px-5 text-center">
+      <p className="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#ffcdc2] to-[#6057ca] hover:from-[#6057ca] hover:to-[#ffcdc2] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl uppercase">
+        ¡Baterias!
+      </p>
 
-      `}
-    >
+      <p className="max-w-xl font-light text-gray-500 mb-4 text-sm md:text-base">
+        Nos complace presentarte nuestras elegantes Baterias de alta calidad.
+      </p>
+      <div className="max-w-xl font-light text-gray-500 mb-4 text-sm md:text-base">
+        <p className="font-semibold">Instrucciones de uso:</p>
+        <p>Pulsa 5 veces para encender o apagar </p>
+        <p>Pulsa 3 veces para cambiar el nivel</p>
+      </div>
+      <div className="max-w-xl flex gap-8 font-light text-gray-500 mb-4  ">
+        <p className="flex flex-col items-center gap-2">
+          <CgSmartHomeLight className="text-red-500 text-4xl animate-pulse" />
+          Fuerte
+        </p>
+        <p className="flex flex-col items-center gap-2">
+          <CgSmartHomeLight className="text-blue-500 text-4xl animate-pulse" />
+          Medio
+        </p>
+        <p className="flex flex-col items-center gap-2">
+          <CgSmartHomeLight className="text-green-500 text-4xl animate-pulse" />
+          Suave
+        </p>
+      </div>
       <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center  ">
         <Navigate />
         <div className="grid gap-8 md:px-12 grid-cols-1  lg:grid-cols-3">
@@ -149,7 +170,7 @@ const Product1 = ({
               <p className="mt-3 capitalize text-sm ">{product.quantity}</p>
               <div className="flex gap-5">{product.price}</div>
 
-              <article className="hover:scale-125 duration-300 mb-2">
+              <article className="animate-pulse hover:scale-125 duration-300 mb-2">
                 <a href={product.codeWpp} target="_blank" rel="noreferrer">
                   <IconWpp />
                 </a>
@@ -158,7 +179,7 @@ const Product1 = ({
           ))}
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

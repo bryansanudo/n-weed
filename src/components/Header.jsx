@@ -52,7 +52,7 @@ const Header = ({
           {darkMode ? (
             <MdWbSunny className="w-8 h-8 cursor-pointer text-[#ffcdc2]" />
           ) : (
-            <MdNightsStay className="w-8 h-8 cursor-pointer text-[#ffcdc2]" />
+            <MdNightsStay className=" w-8 h-8 cursor-pointer text-[#ffcdc2]" />
           )}
         </div>
       </nav>

@@ -113,7 +113,7 @@ const Product3 = ({
                 </p>
                 <div className="flex gap-5">{product.price}</div>
 
-                <article className="hover:scale-125 duration-300 mb-2">
+                <article className="animate-pulse hover:scale-125 duration-300 mb-2">
                   <a href={product.codeWpp} target="_blank" rel="noreferrer">
                     <IconWpp />
                   </a>

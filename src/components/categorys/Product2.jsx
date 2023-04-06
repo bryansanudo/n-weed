@@ -103,7 +103,7 @@ const Product2 = ({
         name="portafolio"
         title="¡Destilados! "
         subtitle={`
-    Nos complace presentarte nuestra amplia gama de productos de alta calidad. Ofrecemos una variedad para que puedas encontrar el que más te guste.
+    Disfruta los mejores destilados hibridos de 1.2ML de contenido y concentrados al 98%. Las cepas varian según la disponibilidad.
 
    `}
       >
@@ -124,7 +124,7 @@ const Product2 = ({
                 </p>
                 <div className="flex gap-5">{product.price}</div>
 
-                <article className="hover:scale-125 duration-300 mb-2">
+                <article className="animate-pulse hover:scale-125 duration-300 mb-2">
                   <a href={product.codeWpp} target="_blank" rel="noreferrer">
                     <IconWpp />
                   </a>

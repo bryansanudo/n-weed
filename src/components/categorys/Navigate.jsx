@@ -6,17 +6,8 @@ import { staggerContainer } from "@/utils/motion";
 import { fadeIn, zoomIn } from "@/utils/motion";
 const Navigate = () => {
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col md:flex-row p-5 mb-12 gap-6 items-center justify-center "
-    >
-      <motion.div
-        variants={fadeIn("down", "spring", 0.1, 4)}
-        className="flex gap-2"
-      >
+    <div className="flex flex-col md:flex-row p-5 mb-12 gap-6 items-center justify-center ">
+      <div className="flex gap-2">
         <Link to="/">
           <div className="rounded-3xl shadow-lg shadow-[#6057ca] hover:scale-105 duration-200  px-6 p-3 cursor-pointer ">
             <div className="flex gap-4">
@@ -47,8 +38,8 @@ const Navigate = () => {
             />
           </div>
         </Link>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

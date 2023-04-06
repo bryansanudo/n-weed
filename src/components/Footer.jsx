@@ -30,7 +30,7 @@ const Footer = () => {
           />
           <button type="button" onClick={useScroll}>
             <AiOutlineArrowUp
-              className="text-gray-400 text-2xl animate-bounce"
+              className="text-gray-400 text-2xl animate-pulse"
               size={40}
             />
           </button>
