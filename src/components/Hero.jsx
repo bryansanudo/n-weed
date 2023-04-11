@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
-import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
+import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
 import { motion } from "framer-motion";
 import { TypingText, TitleText } from "@/components/CustomTexts";
@@ -72,16 +72,16 @@ const Hero = () => {
           className={`absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-between px-4 `}
         >
           <button
-            className="grid h-10 w-10  place-items-center  rounded-full bg-white"
+            className="grid h-10 w-10  place-items-center  rounded-full bg-white opacity-50"
             onClick={handleClickPrev}
           >
-            <GrLinkPrevious size={40} />
+            <GrFormPrevious size={40} />
           </button>
           <button
-            className=" grid h-10 w-10 place-items-center rounded-full bg-white"
+            className=" grid h-10 w-10 place-items-center rounded-full bg-white opacity-50"
             onClick={handleClickNext}
           >
-            <GrLinkNext size={40} />
+            <GrFormNext size={40} />
           </button>
         </div>
       </motion.div>
