@@ -7,20 +7,7 @@ import { TypingText, TitleText } from "@/components/CustomTexts";
 import { staggerContainer, zoomIn } from "@/utils/motion";
 import Slider from "@/components/Slider";
 
-import { useState } from "react";
-
-import photo1 from "@/assets/hero/1.jpg";
-import photo2 from "@/assets/hero/2.jpg";
-import photo3 from "@/assets/hero/3.jpg";
-import photo4 from "@/assets/hero/4.jpg";
-import photo5 from "@/assets/hero/5.jpg";
-import photo6 from "@/assets/hero/6.jpg";
-import photo7 from "@/assets/hero/7.jpg";
-import photo8 from "@/assets/hero/8.jpg";
-import photo9 from "@/assets/hero/9.jpg";
-import photo10 from "@/assets/hero/10.jpg";
-
-const ARRAY_IMG = [
+/* const ARRAY_IMG = [
   photo9,
   photo10,
   photo6,
@@ -31,7 +18,7 @@ const ARRAY_IMG = [
   photo5,
   photo7,
   photo8,
-];
+]; */
 
 const Hero = () => {
   /* window.addEventListener("scroll", function () {
@@ -41,13 +28,13 @@ const Hero = () => {
     else downArrow.classList.remove("hide-down-arrow");
   }); */
 
-  const [index, setIndex] = useState(0);
+  /* const [index, setIndex] = useState(0);
   const handleClickNext = () => {
     index === ARRAY_IMG.length - 1 ? setIndex(0) : setIndex(index + 1);
   };
   const handleClickPrev = () => {
     index === 0 ? setIndex(ARRAY_IMG.length - 1) : setIndex(index - 1);
-  };
+  }; */
 
   return (
     <motion.section
