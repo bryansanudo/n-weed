@@ -12,33 +12,44 @@ const Faq = () => {
   const questions = [
     {
       id: 1,
-      question: "Pregunta 1",
-      answer: "Respuesta 1",
+      question: "¿ Cómo puedo hacer para que dure más mi batería ? ",
+      answer:
+        "Lo mas optimo es no cargar directamente a la luz ya que por la cantidad de voltios del toma corriente la batería podría presentar fallas, lo mas recomendable es cargarla desde un computador o cualquier otro dispositivo que tenga puerto USB",
     },
     {
       id: 2,
-      question: "Pregunta 2",
-      answer: "Respuesta 2",
+      question: "¿Se pueden recargar los productos de la marca ZAZA ? ",
+      answer: "No, puesto que este aceite es 100% importado",
     },
     {
       id: 3,
-      question: "Pregunta 3",
-      answer: "Respuesta 3",
+      question: "¿ Hacen envíos nacionales ? ",
+      answer:
+        "Si hacemos envíos a todo Colombia por medio de Interrapidisimo aproximadamente 2 días tarda en llegar nuestro producto",
     },
     {
       id: 4,
-      question: "Pregunta 4",
-      answer: "Respuesta 4",
+      question: "¿ Índica, Sativa e Híbrida ?",
+      answer:
+        "Existe una increíble variedad y diversidad de sabores que se conocen como cepas hibridas, ya que se creean mediante la combinacion de cepas de Índica y Sativa",
     },
     {
       id: 5,
-      question: "Pregunta 5",
-      answer: "Respuesta 5",
+      question: "Sativa",
+      answer:
+        "Este tipo de variedad va a producir un efecto más “para arriba”, alegre y energizante, con efectos cerebrales estimulantes.",
     },
     {
       id: 6,
-      question: "Pregunta 6",
-      answer: "Respuesta 6",
+      question: "Índica",
+      answer:
+        "Esta variedad produce una sensación más tranquilizante, es genial para descansar y relajarse.",
+    },
+    {
+      id: 6,
+      question: "Híbrida",
+      answer:
+        "Esta mezcla de cepas produce todo un abanico de sensaciones, fuertemente asociadas a las variedades originales, índica o sativa.",
     },
   ];
 
