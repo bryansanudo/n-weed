@@ -8,15 +8,77 @@ import { motion } from "framer-motion";
 
 import { staggerContainer, fadeIn } from "@/utils/motion";
 
-const Product3 = ({
-  allProducts,
-  setAllProducts,
-  countProducts,
-  setCountProducts,
-  total,
-  setTotal,
-}) => {
+import zaza1 from "@/assets/zazaProducts/zaza1.jpeg";
+import zaza2 from "@/assets/zazaProducts/zaza2.jpeg";
+import zaza3 from "@/assets/zazaProducts/zaza3.jpeg";
+import zaza4 from "@/assets/zazaProducts/zaza4.jpeg";
+import zaza5 from "@/assets/zazaProducts/zaza5.jpeg";
+import zaza6 from "@/assets/zazaProducts/zaza6.jpeg";
+
+const Product3 = () => {
   const portfolios = [
+    {
+      id: 9,
+      src: zaza1,
+      nameProduct: "BLACKBERRY DIESEL",
+      price: "COP $$$",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 1,
+    },
+    {
+      id: 10,
+      src: zaza2,
+      nameProduct: "PEANUT BUTTER & JELLY",
+      price: "COP $$$",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 2,
+    },
+    {
+      id: 11,
+      src: zaza3,
+      nameProduct: "CANDY LAND",
+      price: "COP $$$",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 3,
+    },
+    {
+      id: 12,
+      src: zaza4,
+      nameProduct: "BLUEBERRY MUFFIN",
+      price: "COP $$$",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 4,
+    },
+    {
+      id: 13,
+      src: zaza5,
+      nameProduct: "APPLEBERRY",
+      price: "COP $$$",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 5,
+    },
+    {
+      id: 14,
+      src: zaza6,
+      nameProduct: "TANGIE",
+      price: "COP $$$",
+      codeInstagram: "https://www.instagram.com/elianacaro12/",
+      codeWpp: "https://wa.me/c/573127965835",
+      quantity: 1,
+      delay: 6,
+    },
+  ];
+  /* const portfolios = [
     {
       id: 9,
       src: "https://i.ibb.co/YjyTLPt/1.jpg",
@@ -67,21 +129,8 @@ const Product3 = ({
       quantity: 1,
       delay: 5,
     },
-  ];
+  ]; */
 
-  const onAddProduct = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setTotal(total + product.price * product.quantity);
-      setCountProducts(countProducts + product.quantity);
-      return setAllProducts([...products]);
-    }
-    setTotal(total + product.price * product.quantity);
-    setCountProducts(countProducts + product.quantity);
-    setAllProducts([...allProducts, product]);
-  };
   return (
     <motion.div
       variants={staggerContainer}
@@ -89,13 +138,7 @@ const Product3 = ({
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <Section
-        name="portafolio"
-        title="¡Live Resin! "
-        subtitle={`
-    Nos complace presentarte nuestra amplia gama de productos de alta calidad. Ofrecemos una variedad para que puedas encontrar el que más te guste.
-`}
-      >
+      <Section name="portafolio" title="¡ZAZA! ">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center  ">
           <Navigate />
           <div className="grid gap-8 md:px-12 grid-cols-1  lg:grid-cols-3">

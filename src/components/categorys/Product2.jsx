@@ -8,14 +8,7 @@ import { motion } from "framer-motion";
 
 import { staggerContainer, fadeIn } from "@/utils/motion";
 
-const Product2 = ({
-  allProducts,
-  setAllProducts,
-  countProducts,
-  setCountProducts,
-  total,
-  setTotal,
-}) => {
+const Product2 = () => {
   const portfolios = [
     {
       id: 8,
@@ -79,19 +72,6 @@ const Product2 = ({
     },
   ];
 
-  const onAddProduct = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setTotal(total + product.price * product.quantity);
-      setCountProducts(countProducts + product.quantity);
-      return setAllProducts([...products]);
-    }
-    setTotal(total + product.price * product.quantity);
-    setCountProducts(countProducts + product.quantity);
-    setAllProducts([...allProducts, product]);
-  };
   return (
     <motion.div
       variants={staggerContainer}
@@ -99,14 +79,11 @@ const Product2 = ({
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <Section
-        name="portafolio"
-        title="¡Destilados! "
-        subtitle={`
+      <Section name="portafolio" title="¡Destilados! ">
+        {/* subtitle={`
     Disfruta los mejores destilados hibridos de 1.2ML de contenido y concentrados al 98%. Las cepas varian según la disponibilidad.
 
-   `}
-      >
+   `} */}
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center  ">
           <Navigate />
           <div className="grid gap-8 md:px-12 grid-cols-1  lg:grid-cols-3">

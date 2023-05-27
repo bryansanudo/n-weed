@@ -10,14 +10,7 @@ import { fadeIn, zoomIn } from "@/utils/motion";
 
 import { staggerContainer } from "@/utils/motion";
 
-const Product1 = ({
-  allProducts,
-  setAllProducts,
-  countProducts,
-  setCountProducts,
-  total,
-  setTotal,
-}) => {
+const Product1 = () => {
   const portfolios = [
     {
       id: 8,
@@ -113,26 +106,13 @@ const Product1 = ({
     },
   ];
 
-  const onAddProduct = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setTotal(total + product.price * product.quantity);
-      setCountProducts(countProducts + product.quantity);
-      return setAllProducts([...products]);
-    }
-    setTotal(total + product.price * product.quantity);
-    setCountProducts(countProducts + product.quantity);
-    setAllProducts([...allProducts, product]);
-  };
   return (
     <section className="min-h-fit flex flex-col justify-start items-center py-16 px-5 text-center">
       <p className="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#ffcdc2] to-[#6057ca] hover:from-[#6057ca] hover:to-[#ffcdc2] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl uppercase">
         ¡Baterias!
       </p>
 
-      <p className="max-w-xl font-light text-gray-500 mb-4 text-sm md:text-base">
+      {/* <p className="max-w-xl font-light text-gray-500 mb-4 text-sm md:text-base">
         Nos complace presentarte nuestras elegantes Baterias de alta calidad.
       </p>
       <div className="max-w-xl font-light text-gray-500 mb-4 text-sm md:text-base">
@@ -153,7 +133,7 @@ const Product1 = ({
           <CgSmartHomeLight className="text-green-500 text-4xl animate-pulse" />
           Suave
         </p>
-      </div>
+      </div> */}
       <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center  ">
         <Navigate />
         <div className="grid gap-8 md:px-12 grid-cols-1  lg:grid-cols-3">

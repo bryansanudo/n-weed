@@ -5,6 +5,7 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { TypingText, TitleText } from "@/components/CustomTexts";
 import { staggerContainer, zoomIn } from "@/utils/motion";
+import Slider from "@/components/Slider";
 
 import { useState } from "react";
 
@@ -33,12 +34,12 @@ const ARRAY_IMG = [
 ];
 
 const Hero = () => {
-  window.addEventListener("scroll", function () {
+  /* window.addEventListener("scroll", function () {
     const downArrow = document.querySelector(".down-arrow");
 
     if (this.scrollY >= 90) downArrow.classList.add("hide-down-arrow");
     else downArrow.classList.remove("hide-down-arrow");
-  });
+  }); */
 
   const [index, setIndex] = useState(0);
   const handleClickNext = () => {
@@ -55,14 +56,14 @@ const Hero = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="min-h-screen flex flex-col justify-start items-center text-cente pt-[150px] "
+      className="h-auto flex flex-col justify-start items-center text-cente pt-[150px] md:mx-10 mx-4 "
     >
       <TypingText
         title="Siempre parchados con Need Weed"
         textStyles="font-bold text-4xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#ffcdc2] to-[#6057ca] hover:from-[#6057ca] hover:to-[#ffcdc2] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl"
       />
 
-      <motion.div variants={zoomIn(1, 1)} className="relative mt-6 mx-4 ">
+      {/*  <motion.div variants={zoomIn(1, 1)} className="relative mt-6 mx-4 ">
         <img
           src={ARRAY_IMG[index]}
           alt=""
@@ -84,11 +85,11 @@ const Hero = () => {
             <GrFormNext size={40} />
           </button>
         </div>
-      </motion.div>
-
-      <div className="mt-10 down-arrow">
+      </motion.div> */}
+      <Slider />
+      {/* <div className="mt-10 down-arrow">
         <FaArrowDown className="text-gray-400 text-2xl animate-bounce" />
-      </div>
+      </div> */}
     </motion.section>
   );
 };

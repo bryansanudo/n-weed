@@ -32,7 +32,7 @@ const Navigate = () => {
         <Link to="/product3">
           <div className="rounded-3xl shadow-lg shadow-[#ffcdc2] hover:scale-105 duration-200   p-3 cursor-pointer  ">
             <img
-              src="/jeeter.png"
+              src="/zazaIcon.png"
               alt="contact us"
               className=" object-contain w-20 h-20    "
             />
