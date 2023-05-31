@@ -5,9 +5,6 @@ import { TypingText, TitleText } from "@/components/CustomTexts";
 const Section = ({ title, subtitle, children, name }) => {
   return (
     <div>
-      <h1 className="text-black" name={name}>
-        .
-      </h1>
       <section
         name={name}
         className="min-h-fit flex flex-col justify-start items-center py-16 px-5 text-center"

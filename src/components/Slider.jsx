@@ -24,6 +24,14 @@ const Slider = () => {
   ]; */
   const slides = [
     {
+      url: "/publications.png",
+      title: "Últimas novedades",
+      description:
+        "Aquí encontrarás consejos y trucos sobre cómo utilizar nuestros productos de manera eficiente y creativa, ademas de todo el contenido exclusivo de Need Weed ",
+      btn: "publicaciones",
+      link: "/publications",
+    },
+    {
       url: "/zaza.png",
       title: "Explora nuevos horizontes",
       description: "Sumérgete en una experiencia unica con Need Weed ",

@@ -2,8 +2,7 @@ import React from "react";
 import Section from "@/components/common/Section";
 
 import Navigate from "@/components/categorys/Navigate";
-import IconInstagram from "@/icons/IconInstagram";
-import IconWpp from "@/icons/IconWpp";
+
 import { motion } from "framer-motion";
 
 import { staggerContainer, fadeIn } from "@/utils/motion";
@@ -46,7 +45,7 @@ const Faq = () => {
         "Esta variedad produce una sensación más tranquilizante, es genial para descansar y relajarse.",
     },
     {
-      id: 6,
+      id: 7,
       question: "Híbrida",
       answer:
         "Esta mezcla de cepas produce todo un abanico de sensaciones, fuertemente asociadas a las variedades originales, índica o sativa.",

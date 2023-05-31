@@ -1,13 +1,14 @@
 import React from "react";
 
-const IconInstagram = () => {
+const IconInstagram = ({ className }) => {
   return (
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
-        width="28px"
-        height="28px"
+        width="40px"
+        height="40px"
+        className={className}
       >
         <radialGradient
           id="yOrnnhliCrdS2gy~4tD8ma"
