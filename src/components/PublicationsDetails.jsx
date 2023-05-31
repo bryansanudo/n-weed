@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Section from "@/components/common/Section";
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "@/configFirebase";
+import { db } from "@/firebase/configFirebase.js";
 
 import { FaInstagram, FaArrowLeft } from "react-icons/fa";
 import IconInstagram from "@/icons/IconInstagram";
