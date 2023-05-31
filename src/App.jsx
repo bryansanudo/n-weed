@@ -25,9 +25,9 @@ function App() {
         <main className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
           <Hero />
           <Routes>
-            <Route path="/" element={<Product1 />} />
+            <Route path="/" element={<Product3 />} />
             <Route path="/product2" element={<Product2 />} />
-            <Route path="/product3" element={<Product3 />} />
+            <Route path="/product3" element={<Product1 />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/publications/:id" element={<PublicationsDetails />} />

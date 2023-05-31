@@ -12,7 +12,7 @@ const Navigate = () => {
           <div className="rounded-3xl shadow-lg shadow-[#ffcdc2] hover:scale-105 duration-200   p-3 cursor-pointer ">
             <div className="flex gap-4">
               <img
-                src="/baterias.png"
+                src="/zazaIcon.png"
                 alt="contact us"
                 className="object-contain w-20 h-20    "
               />
@@ -32,7 +32,7 @@ const Navigate = () => {
         <Link to="/product3">
           <div className="rounded-3xl shadow-lg shadow-[#ffcdc2] hover:scale-105 duration-200   p-3 cursor-pointer  ">
             <img
-              src="/zazaIcon.png"
+              src="/baterias.png"
               alt="contact us"
               className=" object-contain w-20 h-20    "
             />
